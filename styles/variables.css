@@ -1,1 +1,11 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --font-primary: 'Inter-Variable', 'sans-serif', 'Arial'; 
+    --font-accent: 'PressStart2P-Regular', 'Courier New', 'Lucida Console';
+    --font-weight-card-title: 700;
+    --font-weight-card-text: 400;
+    --background-color: #FFFFFF;
+    --text-color: #000000;
+    
+    /* !--accent-color:  */
+}

@@ -4,3 +4,47 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+    --font-primary: 'Inter-Variable', 'sans-serif', 'Arial'; 
+    --font-accent: 'PressStart2P-Regular', 'Courier New', 'Lucida Console';
+    --font-weight-card-title: 700;
+    --font-weight-card-text: 400;
+    --background-color: #FFFFFF;
+    --text-color: #000000;
+    
+    /* !--accent-color:  */
+
+}
+
+:root.theme-dark {
+    --font-primary: 'Inter-Variable', 'sans-serif', 'Arial'; 
+    --font-accent: 'PressStart2P-Regular', 'Courier New', 'Lucida Console';
+    --font-weight-card-title: 785;
+    --font-weight-card-text: 465;
+    --background-color: #000000;
+    --text-color: #00CC14;
+
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+    --font-primary: 'Inter-Variable', 'sans-serif', 'Arial'; 
+    --font-accent: 'PressStart2P-Regular', 'Courier New', 'Lucida Console';
+    --font-weight-card-title: 785;
+    --font-weight-card-text: 465;
+    --background-color: #000000;
+    --text-color: #00CC14;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --font-primary: 'Inter-Variable', 'sans-serif', 'Arial'; 
+        --font-accent: 'PressStart2P-Regular', 'Courier New', 'Lucida Console';
+        --font-weight-card-title: 700;
+        --font-weight-card-text: 400;
+        --background-color: #FFFFFF;
+        --text-color: #000000;
+    }
+}
