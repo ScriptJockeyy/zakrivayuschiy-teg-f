@@ -21,5 +21,133 @@
   font-variation-settings: "wght" var(--font-weight-card-text);
   background-color: var(--background-color);
   color: var(--text-color);
+  height: 100vh;
+  background-image: repeating-linear-gradient(
+      90deg,
+      var(--stripe-color),
+      var(--stripe-color) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      180deg,
+      var(--stripe-color),
+      var(--stripe-color) 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(to bottom, var(--gradient-start) 0.01%, var(--gradient-end));
+  background-size: cover;
+}
+
+/* Header start  */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 100px;
+}
+
+.header__theme-menu-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: clamp(375px, 100%, 700px);
+  height: 368px; /*! изменить на адаптивные значения*/
+  border: 2px solid var(--text-color);
+  background-color: var(--background-color);
+  gap: 25px;
+}
+
+.header__theme-menu-content {
+  font-family: var(--font-accent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block-start: 136px;
+}
+
+.header__theme-menu-text {
+  font-size: clamp(14px, 2.5vw, 23px);
+  padding-top: 20px;
+  text-transform: uppercase;
+}
+
+.header__theme-menu-title {
+  font-size: clamp(49px, 7vw, 65px);
+}
+
+.theme-menu__button {
+  font-family: var(--font-accent);
+  padding: 0; /* !понять происхождение отступов*/
+  background: none;
+  color: inherit;
+  border: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: opacity 0.3s ease;
+}
+
+.theme-menu__list { /*! отступ в первом итем слева на 1 px*/
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.theme-menu__item {
+  display: flex;
+  align-self: center;
+}
+
+.theme-menu__button:disabled {
+  opacity: 0.6;
+  position: relative;
+  pointer-events: none;
+}
+
+.theme-menu__button:disabled::before {
+  content: "▶";
+  position: absolute;
+  left: -20px;
+  animation: marker 0.5s infinite ease-in-out alternate;
+
+}
+
+/* header end  */
+
+/* main start  */
+
+.cards-container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;  
+}
+
+.card {
+  width: clamp(371px, 100%, 700px);
+  height: auto;
+  border: 2px solid var(--text-color);
+  margin-block-start: 102px;
+  background-color: #fff;
+}
+
+.card__title {
+  /* font-weight: var(--font-weight-card-title); */
+  font-size: 18px;
+}
+
+.card__image{
+  background-color: var(--background-color);
+}
+
+.card__text {
+
+}
+
+.card__button {
+
 }
 

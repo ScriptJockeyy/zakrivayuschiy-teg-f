@@ -13,12 +13,18 @@
     <link rel="stylesheet" href="./styles/themes.css" />
     <script src="./scripts/set-theme.js"></script>
     <!-- <link rel="icon" href="./images/favicon.ico" sizes="any" /> -->
-    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
     <!-- <link rel="icon" href="./images/favicon.png" /> -->
   </head>
   <body class="page">
     <header class="header">
+      <div class="header__theme-menu-wrapper">
+        <article class="header__theme-menu-content">
+          <h1 class="header__theme-menu-title">&lt;/HTML&gt;</h1>
+          <p class="header__theme-menu-text">закрывающий тег</p>
+        </article>
       <nav class="theme-menu header__theme-menu">
+     
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
@@ -42,10 +48,21 @@
             </button>
           </li>
         </ul>
+      
       </nav>
+    </div>
     </header>
     <main>
-      <div>Hello world</div>
+      <section class="cards-container">
+        <article class="card">
+          <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе
+          </h2>
+          <img src="./images/image.png" alt="" class="card__image">
+          <p class="card__text">Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
+          <p class="card__text">Место для ваших воспоминаний о начале обучения.</p>
+            <button class="card__button"></button>
+        </article>
+      </section>
     </main>
     <script src="./scripts/like.js"></script>
   </body>

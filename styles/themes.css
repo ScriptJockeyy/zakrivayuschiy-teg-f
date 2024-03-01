@@ -6,45 +6,55 @@
 */
 
 :root.theme-light {
-    --font-primary: 'Inter-Variable', 'sans-serif', 'Arial'; 
-    --font-accent: 'PressStart2P-Regular', 'Courier New', 'Lucida Console';
-    --font-weight-card-title: 700;
-    --font-weight-card-text: 400;
-    --background-color: #FFFFFF;
-    --text-color: #000000;
-    
-    /* !--accent-color:  */
+  --font-primary: "Inter", "sans-serif", "Arial";
+  --font-accent: "PressStart2P", "Courier New", "Lucida Console";
+  --font-weight-card-title: 700;
+  --font-weight-card-text: 400;
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --stripe-color: #d3d3d3;
+  --gradient-start: #e7e7e7;
+  --gradient-end: #1a1a1a;
 
+  /* !--accent-color:  */
 }
 
 :root.theme-dark {
-    --font-primary: 'Inter-Variable', 'sans-serif', 'Arial'; 
-    --font-accent: 'PressStart2P-Regular', 'Courier New', 'Lucida Console';
-    --font-weight-card-title: 785;
-    --font-weight-card-text: 465;
-    --background-color: #000000;
-    --text-color: #00CC14;
-
+  --font-primary: "Inter", "sans-serif", "Arial";
+  --font-accent: "PressStart2P", "Courier New", "Lucida Console";
+  --font-weight-card-title: 785;
+  --font-weight-card-text: 465;
+  --background-color: #000000;
+  --text-color: #00cc14;
+  --stripe-color: #000;
+  --gradient-start: #007f0c;
+  --gradient-end: #004306;
 }
 
 @media (prefers-color-scheme: dark) {
-    :root {
-    --font-primary: 'Inter-Variable', 'sans-serif', 'Arial'; 
-    --font-accent: 'PressStart2P-Regular', 'Courier New', 'Lucida Console';
+  :root {
+    --font-primary: "Inter", "sans-serif", "Arial";
+    --font-accent: "PressStart2P", "Courier New", "Lucida Console";
     --font-weight-card-title: 785;
     --font-weight-card-text: 465;
     --background-color: #000000;
-    --text-color: #00CC14;
-    }
+    --text-color: #00cc14;
+    --stripe-color: #000;
+    --gradient-start: #007f0c;
+    --gradient-end: #004306;
+  }
 }
 
 @media (prefers-color-scheme: light) {
-    :root {
-        --font-primary: 'Inter-Variable', 'sans-serif', 'Arial'; 
-        --font-accent: 'PressStart2P-Regular', 'Courier New', 'Lucida Console';
-        --font-weight-card-title: 700;
-        --font-weight-card-text: 400;
-        --background-color: #FFFFFF;
-        --text-color: #000000;
-    }
+  :root {
+    --font-primary: "Inter", "sans-serif", "Arial";
+    --font-accent: "PressStart2P", "Courier New", "Lucida Console";
+    --font-weight-card-title: 700;
+    --font-weight-card-text: 400;
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --stripe-color: #d3d3d3;
+    --gradient-start: #e7e7e7;
+    --gradient-end: #1a1a1a;
+  }
 }
