@@ -8,13 +8,15 @@
 :root.theme-light {
   --font-primary: "Inter", "sans-serif", "Arial";
   --font-accent: "PressStart2P", "Courier New", "Lucida Console";
-  --font-weight-card-title: 700;
-  --font-weight-card-text: 400;
+  --font-weight-card-title: 'wght' 700;
+  --font-weight-card-text: 'wght' 400;
   --background-color: #ffffff;
   --text-color: #000000;
   --stripe-color: #d3d3d3;
   --gradient-start: #e7e7e7;
   --gradient-end: #1a1a1a;
+  --label-accent-color: #000000;
+
 
   /* !--accent-color:  */
 }
@@ -22,26 +24,30 @@
 :root.theme-dark {
   --font-primary: "Inter", "sans-serif", "Arial";
   --font-accent: "PressStart2P", "Courier New", "Lucida Console";
-  --font-weight-card-title: 785;
-  --font-weight-card-text: 465;
+  --font-weight-card-title: 'wght' 780;
+  --font-weight-card-text: 'wght' 465;
   --background-color: #000000;
   --text-color: #00cc14;
   --stripe-color: #000;
   --gradient-start: #007f0c;
   --gradient-end: #004306;
+  --label-accent-color: #00cc14;
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --font-primary: "Inter", "sans-serif", "Arial";
     --font-accent: "PressStart2P", "Courier New", "Lucida Console";
-    --font-weight-card-title: 785;
-    --font-weight-card-text: 465;
+    --font-weight-card-title: 'wght' 780;
+    --font-weight-card-text: 'wght' 465;
     --background-color: #000000;
     --text-color: #00cc14;
     --stripe-color: #000;
     --gradient-start: #007f0c;
     --gradient-end: #004306;
+    --label-accent-color: #00cc14;
+
   }
 }
 
@@ -49,12 +55,18 @@
   :root {
     --font-primary: "Inter", "sans-serif", "Arial";
     --font-accent: "PressStart2P", "Courier New", "Lucida Console";
-    --font-weight-card-title: 700;
-    --font-weight-card-text: 400;
+    --font-weight-card-title: 'wght' 700;
+    --font-weight-card-text: 'wght' 400;
     --background-color: #ffffff;
     --text-color: #000000;
     --stripe-color: #d3d3d3;
     --gradient-start: #e7e7e7;
     --gradient-end: #1a1a1a;
+    --label-accent-color: #000000;
+
+
   }
 }
+
+
+/* ! не работает шрифт  */
