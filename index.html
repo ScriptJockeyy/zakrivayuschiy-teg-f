@@ -73,6 +73,7 @@
               loading="lazy"
             />
           </div>
+          <div class="card__content-wrapper">
           <div class="card__text-wrapper">
             <p class="card__text">
               Это было самое начало пути. На этом этапе важно было проникнуться
@@ -88,6 +89,7 @@
               <span class="button__text">Like</span>
             </button>
           </div>
+        </div>
         </article>
         <article class="card">
           <h2 class="card__title">1 спринт: Я — чистый лист</h2>
@@ -299,29 +301,34 @@
     </main>
     <footer class="footer">
       <button
-        class="footer__button button"
+        class="footer__button"
         type="button"
         onclick="window['dialog-id'].showModal()"
         aria-controls="dialog-id"
       >
-        <svg width="21" height="21" class="floopy">
-          <use href="svg/floppy.svg#floopy"></use>
+        <svg viewBox="0 0 39 39" width="21" height="21" class="floppy">
+          <use href="svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
-      <dialog id="dialog-id">
-        <svg width="39" height="39" class="floopy-dialog">
-          <use href="svg/floppy.svg#floopy"></use>
-        </svg>
-        <h2 class="dialog-title">Вставьте дискету, чтобы продолжить</h2>
-        <button class="dialog-button-confirm"  type="button" 
-        onclick="window['dialog-id'].close()">OK</button>
+      <dialog id="dialog-id" class="dialog-footer">
+        <div class="dialog__content-wrapper">
+          <svg viewBox="0 0 39 39" width="39" height="39" class="floppy-dialog">
+            <use href="svg/floppy.svg#floppy"></use>
+          </svg>
+          <h2 class="dialog-title">Вставьте дискету, чтобы продолжить</h2>
+          <button
+            class="dialog-button-confirm button-customs"
+            type="button"
+            onclick="window['dialog-id'].close()"
+          >
+            OK
+          </button>
+        </div>
       </dialog>
     </footer>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
 
-
-<!--! floopy не работает ! -->
 <!-- ! изменить цвета отмеченные в style  -->
