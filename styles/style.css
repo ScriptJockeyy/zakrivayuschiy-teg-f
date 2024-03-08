@@ -85,7 +85,7 @@
 
 .theme-menu__button {
   font-family: var(--font-accent);
-  padding: 0; /* !понять происхождение отступов*/
+  padding: 0;
   background: none;
   color: inherit;
   border: none;
@@ -244,7 +244,18 @@
 .card__buttom-wrapper {
   display: flex;
   justify-content: end;
+  /* align-items: end; */
   margin: 25px;
+  gap: 7px;
+}
+
+.button__text {
+  font-family: var(--font-accent);
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+  mix-blend-mode: difference;
 }
 
 .card__like-button {
@@ -254,13 +265,47 @@
   background-color: inherit;
   border: 2px solid var(--text-color);
   min-width: 130px;
-  min-height: 38px;
+  max-height: 38px;
   cursor: pointer;
+  position: relative;
+}
+
+.card__like-button::after,
+.dialog-button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: black;
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+
+.card__like-button:hover::after,
+.dialog-button:hover::after {
+  transform: scaleX(1);
+}
+
+.card__like-button:focus {
+  outline: none;
+}
+
+.card__like-button:focus-visible {
+  box-shadow: 2px 2px 0px black;
+  transition: box-shadow 0.3s ease;
 }
 
 .card__icon-button {
   background: transparent;
   border: 0;
+  padding: 0;
+}
+
+.like-icon {
+  cursor: pointer;
 }
 
 .like-icon .core {
@@ -351,11 +396,6 @@
   transition: opacity, fill 0.3s 0.06s ease;
 }
 
-.button__text {
-  font-family: var(--font-accent);
-  font-size: 14px;
-}
-
 .card__text-wrapper {
   display: flex;
   flex-direction: column;
@@ -372,7 +412,8 @@
 .floopy {
   position: relative;
   z-index: 1;
-  color: var(--text-color); /* ! */
+  color: #000;
+  mix-blend-mode: difference;
 }
 
 .footer__button {
@@ -388,6 +429,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+  position: relative;
 }
 
 .button-customs {
