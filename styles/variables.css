@@ -1,6 +1,6 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
-    --font-primary: 'Inter'; 
+    --font-primary: 'Inter';
     --font-accent: 'PressStart2P', 'Courier New', 'Lucida Console';
     --font-weight-card-title: 'wght' 700;
     --font-weight-card-text: 'wght' 400;

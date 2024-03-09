@@ -18,7 +18,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-primary);
-  font-variation-settings: "wght" var(--font-weight-card-text);
+  font-variation-settings: var(--font-weight-card-text);
   background-color: var(--background-color);
   color: var(--text-color);
   height: 100vh;
@@ -180,8 +180,8 @@
   max-width: 100%;
   position: relative;
   display: block;
-  border-left: 2px solid var(--accent-color); 
-  border-right: 2px solid var(--accent-color); 
+  border-left: 2px solid var(--accent-color);
+  border-right: 2px solid var(--accent-color);
 }
 
 .card__content-wrapper {
@@ -234,9 +234,18 @@
 }
 
 .card__text {
-  font-variation-settings: "wght" 400;
+  font-variation-settings: var(--font-weight-card-text);
   line-height: 21px;
   font-size: 18px;
+  width: 100%;
+}
+
+.card__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  padding: 27px 26px 0px 25px;
+  width: 100%;
 }
 
 .card__buttom-wrapper {
@@ -314,7 +323,7 @@
 }
 
 .like-icon:focus {
-outline: none;
+  outline: none;
 }
 
 .like-icon .core {
@@ -385,17 +394,10 @@ outline: none;
   transition: opacity, fill 0.3s 0.06s ease;
 }
 
-.card__text-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 27px;
-  margin: 27px 25px 0px 25px;
-  max-width: 646px;
-}
-
 .footer {
   display: grid;
   place-items: center;
+  width: 100%;
 }
 
 .floppy {
@@ -406,8 +408,9 @@ outline: none;
 }
 
 .footer__button {
-  margin: 50px 180px 103px;
+  margin: 52px 0 105px 0;
   border: 2px solid var(--accent-color);
+  outline-offset: -2px;
   cursor: pointer;
   background-color: var(--background-color);
   min-width: 335px;
@@ -419,6 +422,7 @@ outline: none;
   align-items: center;
   gap: 8px;
   position: relative;
+  line-height: 12.6px;
 }
 
 .button-customs {
@@ -491,7 +495,11 @@ dialog::backdrop {
   .footer__button {
     flex-direction: column;
     min-width: 306px;
-    min-height: 80px;
-    margin: 54px 34px 102px 35px;
+    height: 80px;
+  }
+
+  .floppy {
+    width: 28px;
+    height: 28px;
   }
 }
