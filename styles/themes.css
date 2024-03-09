@@ -8,8 +8,8 @@
 :root.theme-light {
   --font-primary: "Inter", "sans-serif", "Arial";
   --font-accent: "PressStart2P", "Courier New", "Lucida Console";
-  --font-weight-card-title: 'wght' 700;
-  --font-weight-card-text: 'wght' 400;
+  --font-weight-card-title: 700;
+  --font-weight-card-text: 400;
   --background-color: #ffffff;
   --text-color: #000000;
   --stripe-color: #d3d3d3;
@@ -25,8 +25,8 @@
 :root.theme-dark {
   --font-primary: "Inter", "sans-serif", "Arial";
   --font-accent: "PressStart2P", "Courier New", "Lucida Console";
-  --font-weight-card-title: 'wght' 780;
-  --font-weight-card-text: 'wght' 465;
+  --font-weight-card-title: 780;
+  --font-weight-card-text: 465;
   --background-color: #000000;
   --text-color: #00cc14;
   --stripe-color: #000;
@@ -43,8 +43,8 @@
   :root {
     --font-primary: "Inter", "sans-serif", "Arial";
     --font-accent: "PressStart2P", "Courier New", "Lucida Console";
-    --font-weight-card-title: 'wght' 780;
-    --font-weight-card-text: 'wght' 465;
+    --font-weight-card-title: 780;
+    --font-weight-card-text: 465;
     --background-color: #000000;
     --text-color: #00cc14;
     --stripe-color: #000;
@@ -62,8 +62,8 @@
   :root {
     --font-primary: "Inter", "sans-serif", "Arial";
     --font-accent: "PressStart2P", "Courier New", "Lucida Console";
-    --font-weight-card-title: 'wght' 700;
-    --font-weight-card-text: 'wght' 400;
+    --font-weight-card-title: 700;
+    --font-weight-card-text: 400;
     --background-color: #ffffff;
     --text-color: #000000;
     --stripe-color: #d3d3d3;
