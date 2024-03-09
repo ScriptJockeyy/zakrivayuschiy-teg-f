@@ -16,9 +16,10 @@
   --gradient-start: #e7e7e7;
   --gradient-end: #1a1a1a;
   --label-accent-color: #000000;
-
-
-  /* !--accent-color:  */
+  --accent-color: #000000;
+  --diference-color: #FFFFFF;
+  --heart-liked: red;
+  --heart-border: black;
 }
 
 :root.theme-dark {
@@ -32,7 +33,10 @@
   --gradient-start: #007f0c;
   --gradient-end: #004306;
   --label-accent-color: #00cc14;
-
+  --accent-color: #00CC14;
+  --diference-color: #00CC14;
+  --heart-liked: red;
+  --heart-border: black;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -47,7 +51,10 @@
     --gradient-start: #007f0c;
     --gradient-end: #004306;
     --label-accent-color: #00cc14;
-
+    --accent-color: #00CC14;
+    --diference-color: #00CC14;
+    --heart-liked: red;
+    --heart-border: black;
   }
 }
 
@@ -63,8 +70,10 @@
     --gradient-start: #e7e7e7;
     --gradient-end: #1a1a1a;
     --label-accent-color: #000000;
-
-
+    --accent-color: #000000;
+    --diference-color: #FFFFFF;
+    --heart-liked: red;
+    --heart-border: black;
   }
 }
 
