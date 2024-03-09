@@ -590,15 +590,14 @@
         class="footer__button dialog-button"
         type="button"
         onclick="window['dialog'].showModal()"
-        aria-controls="dialog-id"
-      >
+        aria-controls="dialog-id">
         <svg viewBox="0 0 39 39" width="21" height="21" class="floppy">
           <use href="svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
-      <dialog id="dialog" class="dialog-footer dialog">
-        <div class="dialog__content-wrapper">
+      <dialog id="dialog" class="dialog-footer">
+        <form method="dialog" class="dialog__content-wrapper">
           <svg viewBox="0 0 39 39" width="39" height="39" class="floppy-dialog">
             <use href="svg/floppy.svg#floppy"></use>
           </svg>
@@ -610,7 +609,8 @@
           >
             OK
           </button>
-        </div>
+        </form>
+        </for>
       </dialog>
     </footer>
     <script src="./scripts/like.js"></script>
