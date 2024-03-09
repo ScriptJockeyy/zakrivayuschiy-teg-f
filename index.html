@@ -589,7 +589,7 @@
       <button
         class="footer__button dialog-button"
         type="button"
-        onclick="window['dialog-id'].showModal()"
+        onclick="window['dialog'].showModal()"
         aria-controls="dialog-id"
       >
         <svg viewBox="0 0 39 39" width="21" height="21" class="floppy">
@@ -597,7 +597,7 @@
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
-      <dialog id="dialog-id" class="dialog-footer">
+      <dialog id="dialog" class="dialog-footer dialog">
         <div class="dialog__content-wrapper">
           <svg viewBox="0 0 39 39" width="39" height="39" class="floppy-dialog">
             <use href="svg/floppy.svg#floppy"></use>
@@ -606,7 +606,7 @@
           <button
             class="dialog-button-confirm button-customs"
             type="button"
-            onclick="window['dialog-id'].close()"
+            onclick="window['dialog'].close()"
           >
             OK
           </button>
@@ -617,4 +617,3 @@
   </body>
 </html>
 
-<!-- ! изменить цвета отмеченные в style  -->
