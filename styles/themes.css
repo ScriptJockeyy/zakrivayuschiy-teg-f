@@ -36,7 +36,8 @@
   --accent-color: #00CC14;
   --diference-color: #00CC14;
   --heart-liked: red;
-  --heart-border: black;
+  --heart-border: #00CC14;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -54,7 +55,8 @@
     --accent-color: #00CC14;
     --diference-color: #00CC14;
     --heart-liked: red;
-    --heart-border: black;
+    --heart-border: #00CC14;
+
   }
 }
 

@@ -14,11 +14,10 @@
 
 */
 
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--font-primary);
+  font-family: var(--font-primary), Arial, "sans-serif";
   font-variation-settings: "wght" var(--font-weight-card-text);
   background-color: var(--background-color);
   color: var(--text-color);
@@ -80,10 +79,11 @@
 
 .header__theme-menu-title {
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  text-decoration: none;
 }
 
 .theme-menu__button {
-  font-family: var(--font-accent);
+  font-family: var(--font-accent), fantasy;
   padding: 0;
   background: none;
   color: inherit;
@@ -92,6 +92,15 @@
   text-transform: uppercase;
   transition: opacity 0.3s ease;
   margin-left: 20px;
+  cursor: pointer;
+}
+
+.theme-menu__button:focus {
+  outline: none;
+}
+
+.theme-menu__button:focus-visible {
+  opacity: 0.6;
 }
 
 .theme-menu__button::after {
@@ -104,7 +113,7 @@
   opacity: 0.6;
 }
 
-.theme-menu__button:hover::after {
+.theme-menu__button:focus-visible::after {
   width: 100%;
 }
 
@@ -192,7 +201,7 @@
   color: var(--label-accent-color);
   right: 25px;
   top: 25px;
-  font-family: var(--font-accent);
+  font-family: var(--font-accent), fantasy;
   font-size: 14px;
   line-height: 14px;
   mix-blend-mode: hard-light;
@@ -255,7 +264,7 @@
 }
 
 .button__text {
-  font-family: var(--font-accent);
+  font-family: var(--font-accent), fantasy;
   font-size: 14px;
   position: relative;
   z-index: 1;
@@ -294,16 +303,20 @@
   transform: scaleX(1);
 }
 
-.card__icon-button:focus {
+.card__icon-button:focus,
+.dialog-button:focus {
   outline: none;
 }
 
-.card__icon-button:focus-visible {
+.card__icon-button:focus-visible,
+.dialog-button:focus-visible {
   outline: 2px solid var(--accent-color);
   outline-offset: -2px;
+  transition: outline 0.3s ease;
 }
 
-.card__like-button:focus-visible {
+.card__like-button:focus-visible,
+.dialog-button:focus-visible {
   box-shadow: 2px 2px 0px var(--accent-color);
   transition: box-shadow 0.3s ease;
   outline: 2px solid var(--accent-color);
@@ -315,6 +328,7 @@
   border: 0;
   padding: 0;
   height: 38px;
+  outline: 2px solid transparent;
 }
 
 .like-icon {
@@ -414,7 +428,7 @@
   background-color: var(--background-color);
   min-width: 335px;
   min-height: 55px;
-  font-family: var(--font-accent);
+  font-family: var(--font-accent), fantasy;
   font-size: 14px;
   display: flex;
   justify-content: center;
@@ -429,11 +443,11 @@
   cursor: pointer;
   background-color: var(--background-color);
   min-height: 38px;
-  font-family: var(--font-accent);
+  font-family: var(--font-accent), fantasy;
   font-size: 14px;
   justify-self: stretch;
-  align-self: stretch;
   grid-area: 2 / 1 / 3 / 6;
+  position: relative;
 }
 
 #dialog::backdrop {
@@ -452,7 +466,7 @@
 .dialog-title {
   text-transform: uppercase;
   font-size: 14px;
-  font-family: var(--font-accent);
+  font-family: var(--font-accent), fantasy;
   width: 200px;
   grid-area: 1 / 2 / 2 / 6;
   justify-self: start;
@@ -488,7 +502,7 @@
 
   .dialog-footer {
     min-height: 191px;
-    max-width: 341;
+    max-width: 341px;
   }
 
   .footer__button {
