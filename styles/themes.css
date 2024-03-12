@@ -6,8 +6,8 @@
 */
 
 :root.theme-light {
-  --font-primary: "Inter", "sans-serif", "Arial";
-  --font-accent: "PressStart2P", "Courier New", "Lucida Console";
+  --font-primary: "Inter";
+  --font-accent: "PressStart2P";
   --font-weight-card-title: 700;
   --font-weight-card-text: 400;
   --background-color: #ffffff;
@@ -23,8 +23,8 @@
 }
 
 :root.theme-dark {
-  --font-primary: "Inter", "sans-serif", "Arial";
-  --font-accent: "PressStart2P", "Courier New", "Lucida Console";
+  --font-primary: "Inter";
+  --font-accent: "PressStart2P";
   --font-weight-card-title: 780;
   --font-weight-card-text: 465;
   --background-color: #000000;
@@ -42,8 +42,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --font-primary: "Inter", "sans-serif", "Arial";
-    --font-accent: "PressStart2P", "Courier New", "Lucida Console";
+    --font-primary: "Inter";
+    --font-accent: "PressStart2P";
     --font-weight-card-title: 780;
     --font-weight-card-text: 465;
     --background-color: #000000;
@@ -62,8 +62,8 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --font-primary: "Inter", "sans-serif", "Arial";
-    --font-accent: "PressStart2P", "Courier New", "Lucida Console";
+    --font-primary: "Inter";
+    --font-accent: "PressStart2P";
     --font-weight-card-title: 700;
     --font-weight-card-text: 400;
     --background-color: #ffffff;
@@ -79,5 +79,3 @@
   }
 }
 
-
-/* ! не работает шрифт  */
