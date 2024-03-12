@@ -1,1 +1,1 @@
-https://github.com/ScriptJockeyy/zakrivayuschiy-teg-f.git
+https://scriptjockeyy.github.io/zakrivayuschiy-teg-f/
